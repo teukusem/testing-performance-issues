@@ -10,8 +10,9 @@ function App() {
   return (
     <>
       <div style={{ position: 'relative' }}>
-        <video width="750" height="500" autoPlay muted loop>
+        <video width="750" height="500" autoPlay muted loop playsInline>
           <source src={TestingVideo} type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
         <h1 style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1 }} onClick={() => alert('holla')}>TESTING BRO</h1>
       </div>
